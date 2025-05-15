@@ -1,5 +1,4 @@
 {
-  "homepage": "https://Ivanohlu.github.io/single-page-application",
   "name": "single-page-application",
   "version": "0.1.0",
   "private": true,
@@ -27,6 +26,7 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
+
   },
   "eslintConfig": {
     "extends": [
@@ -46,7 +46,5 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "gh-pages": "^6.3.0"
-  }
+    "homepage": "https://ivanohluliliia.github.io/single-page-application/"
 }
