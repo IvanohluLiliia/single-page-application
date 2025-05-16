@@ -65,9 +65,9 @@ const Header = ({ toggleTheme, isDarkTheme }) => {
   return (
     <HeaderWrapper>
       <Nav>
-        <StyledLink to="/about">Про мене</StyledLink>
-        <StyledLink to="/my-city">Моє місто</StyledLink>
-        <StyledLink to="/my-future">Мій розвиток</StyledLink>
+        <StyledLink to="/single-page-application/">Про мене</StyledLink>
+        <StyledLink to="/single-page-application/my-city">Моє місто</StyledLink>
+        <StyledLink to="/single-page-application/my-future">Мій розвиток</StyledLink>
       </Nav>
       <ThemeButton onClick={toggleTheme} aria-label="Змінити тему">
         {isDarkTheme ? <Sun size={22} /> : <Moon size={22} />}

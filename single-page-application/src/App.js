@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Route, Routes, Navigate } from 'react-router-dom'; // Додано Navigate
+import { useState, useEffect } from 'react';
+import { Route, Routes } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme } from './theme';
 import GlobalStyle from './GlobalStyle';
@@ -32,10 +32,9 @@ function App() {
       <GlobalStyle />
       <Header toggleTheme={toggleTheme} isDarkTheme={theme === 'dark'} />
       <Routes>
-        <Route path="/" element={<Navigate to="/about" />} /> {/* Редірект на /about */}
-        <Route path="/about" element={<AboutMe />} />
-        <Route path="/my-city" element={<MyCity />} />
-        <Route path="/my-future" element={<MyFuture />} />
+        <Route path="/single-page-application/" element={<AboutMe />} />
+        <Route path="/single-page-application/my-city" element={<MyCity />} />
+        <Route path="/single-page-application/my-future" element={<MyFuture />} />
       </Routes>
       <Footer />
     </ThemeProvider>
